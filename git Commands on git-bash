@@ -1,0 +1,286 @@
+Jatin Singh@rokerzz MINGW64 ~
+$ pwd
+/c/Users/Jatin Singh
+
+Jatin Singh@rokerzz MINGW64 ~
+$ cd projects
+
+Jatin Singh@rokerzz MINGW64 ~/projects
+$ ls
+git-demo/
+
+Jatin Singh@rokerzz MINGW64 ~/projects
+$ cd git-demo
+
+Jatin Singh@rokerzz MINGW64 ~/projects/git-demo (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Jatin Singh/pro.git/
+
+Jatin Singh@rokerzz MINGW64 ~/projects
+$ git clone https://github.com/jatinsigh/Handwritten-digit-classier.git
+Cloning into 'Handwritten-digit-classifier'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (9/9), done.
+Resolving deltas: 100% (1/1), done.
+
+Jatin Singh@rokerzz MINGW64 ~/projects
+$ git branch Feature
+fatal: not a git repository (or any of the parent directories): .t
+
+Jatin Singh@rokerzz MINGW64 ~/projects
+$ ls
+Handwritten-digit-classifier/  git-demo/
+
+Jatin Singh@rokerzz MINGW64 ~/projects
+$ git Handwritten-digit-classifier
+git: 'Handwritten-digit-classifier' is not a git command. See 'gi--help'.
+
+Jatin Singh@rokerzz MINGW64 ~/projects
+$ cd Handwritten-digit-classifier
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi (master)
+$ git branch Feature
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi (master)
+$ git branch Developer
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi (master)
+$ git branch QA
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi (master)
+$ git branch Product
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi (master)
+$ git branch Delivery
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi (master)
+$ notepad intro.txt
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        intro.txt
+
+nothing added to commit but untracked files present (use "git addto track)
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi (master)
+$ git add intro.txt
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   intro.txt
+
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi (master)
+$ git commit -m "Initial added file commit"
+[master 2f0f4f9] Initial added file commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 intro.txt
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi (master)
+$ git push origin Feature
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Feature' on GitHub by visiting
+remote:      https://github.com/jatinsigh/Handwritten-digit-classier/pull/new/Feature
+remote:
+To https://github.com/jatinsigh/Handwritten-digit-classifier.git
+ * [new branch]      Feature -> Feature
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi
+$ git checkout -b Devegit fkvksxkwjendcjnd
+fatal: 'fkvksxkwjendcjnd' is not a commit and a branch 'Devegit' rom it
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi
+$
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi
+$
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi
+$
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifi
+$ cd ~
+
+Jatin Singh@rokerzz MINGW64 ~
+$ cd projects
+
+Jatin Singh@rokerzz MINGW64 ~/projects
+$ cd Handwritten-digit-classifier
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifiure)
+$ git status
+On branch Feature
+nothing to commit, working tree clean
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifiure)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 334 bytes | 83.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jatinsigh/Handwritten-digit-classifier.git
+   9e78e93..2f0f4f9  master -> master
+Branch 'master' set up to track remote branch 'master' from 'orig
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifiure)
+$ git branch
+  Delivery
+  Developer
+* Feature
+  Product
+  QA
+  master
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifiure)
+$ git branch -a
+  Delivery
+  Developer
+* Feature
+  Product
+  QA
+  master
+  remotes/origin/Feature
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifiure)
+$ git checkout -b Developer
+fatal: A branch named 'Developer' already exists.
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifiure)
+$ git checkout  Developer
+Switched to branch 'Developer'
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifiloper)
+$ git push -u origin Developer
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'Developer' on GitHub by visiti
+remote:      https://github.com/jatinsigh/Handwritten-digit-classll/new/Developer
+remote:
+To https://github.com/jatinsigh/Handwritten-digit-classifier.git
+ * [new branch]      Developer -> Developer
+Branch 'Developer' set up to track remote branch 'Developer' from'.
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifiloper)
+$ git branch -r
+  origin/Developer
+  origin/Feature
+  origin/HEAD -> origin/master
+  origin/master
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifiloper)
+$ git checkout Feature
+Switched to branch 'Feature'
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifiure)
+$ git pull Developer
+fatal: 'Developer' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifiure)
+$ git checkout Feature
+Already on 'Feature'
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifiure)
+$ git checkout Developer
+Switched to branch 'Developer'
+Your branch is up to date with 'origin/Developer'.
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Developer)
+$ git merger Feature
+git: 'merger' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Developer)
+$ git merge Feature
+Already up to date.
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Developer)
+$ git checkout Feature
+Switched to branch 'Feature'
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Feature)
+$ notepad intro.txt
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Feature)
+$ git status
+On branch Feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        intro.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Feature)
+$ git add intro.txt
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Feature)
+$ git commit -m "Add intro files"
+[Feature d53f616] Add intro files
+ 1 file changed, 1 insertion(+)
+ create mode 100644 intro.txt
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Feature)
+$ git push -u origin
+fatal: The current branch Feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Feature
+
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Feature)
+$ git push -u origin Feature
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 315 bytes | 157.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/jatinsigh/Handwritten-digit-classifier.git
+   9e78e93..d53f616  Feature -> Feature
+Branch 'Feature' set up to track remote branch 'Feature' from 'origin'.
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Feature)
+$ git checkout Developer
+Switched to branch 'Developer'
+Your branch is up to date with 'origin/Developer'.
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Developer)
+$ git merger Feature
+git: 'merger' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Developer)
+$ git merge Feature
+Updating 9e78e93..d53f616
+Fast-forward
+ intro.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 intro.txt
+
+Jatin Singh@rokerzz MINGW64 ~/projects/Handwritten-digit-classifier (Developer)
+$
